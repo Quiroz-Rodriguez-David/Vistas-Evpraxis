@@ -1,0 +1,317 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 30px;
+}
+
+.footer {
+  padding-top: 5px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  min-height: 30px;
+  background-color: #333;
+  color: #eee;  
+}
+
+@media (max-width: 767px){
+  /*Logo DGRE*/
+  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+    margin-left: 11px;
+  }
+
+}
+
+@media (min-width: 768px){
+  /*Logo DGRE*/
+  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+    margin-left: 0;
+  }
+  
+}
+/* Header
+-------------------------------------------------- */
+.ucol_header{
+  background-color: #333;
+  color: #eee;
+}
+.logo_ucol{
+  height: 77px;
+  margin: 7px 0 0 3px;
+  background: transparent url('../images/UdeC.png') no-repeat;
+}
+.logo_ep{
+  display: block;
+  height: 70px;
+  width: 260px;
+  margin: 3px;
+  background: transparent url('../images/logo.png') no-repeat 0 0;
+}
+.logo_ep_white{
+  display: block;
+  height: 70px;
+  width: 237px;
+  margin-top: 3px;
+  background: transparent url('../images/logo_white.png') no-repeat 0 0;
+}
+.logo_dgre{
+    height: 35px;
+    background: transparent url('../images/dgre.png') no-repeat;
+    margin-top: 10px;
+    padding-bottom: 5px;  
+    margin-right: 10px;
+}
+.SectionTitle{
+    font-size: 22px;
+    margin-top: -10px;
+    margin-left: 4px;  
+}
+
+/*Menu secciones y grupos nuevo examen*/
+.fixedMenu{
+  position: fixed;
+}
+
+#tree{
+  max-height: 300px;
+  overflow-y:auto;    
+}
+/*------------------------------------*/
+
+
+/* Contenido
+-------------------------------------------------- */
+.onePixUp{
+  top: -1px !important;
+}
+
+.section-container{
+  margin: 15px;
+}
+.question_head h2{
+  margin: 0;
+}
+.hr-light{
+  margin:5px;
+  border-top: 1px solid #ddd;
+
+}
+.panel-question{
+  background-color: #eee;
+}
+.btn-del-relation{
+  margin-top: 10px;
+}
+.answersTitle{
+  margin-bottom: 20px;
+}
+.answerRow{
+  margin-bottom: 5px;
+}
+
+.fieldError{
+  border-color: red !important;
+}
+.validationError{
+  width: 100%;
+  background-color: yellow;
+  color:red;
+}
+.nodeError{
+  color: #a94442;
+}
+
+.fa-lg{
+  margin-top: 2px !important;
+}
+
+.modal-title-icon{
+  position: relative;
+  top: -3px;
+}
+
+.btn-word-wrap{
+  white-space: normal !important;
+}
+/*------------------------------------*/
+
+/* modal de agendar aplicacion
+-------------------------------------------------- */
+  p.app_exam_info{
+    margin: 0;
+  }
+  div.applier-well{
+    margin: 4px 0;
+    padding:9px 0;
+  }
+/*------------------------------------*/
+
+/* modal para ver alumnos del grupo
+--------------------------------------*/
+.groupCode{
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.code-block{
+  margin-bottom: 0;
+}
+/*------------------------------------*/
+
+
+/* date time picker
+--------------------------------------*/
+
+.dtp-buttons button {
+  margin: 3px;
+}
+
+.dtp-content{
+  border-radius: 4px;
+}
+
+.dtp-header{
+  border-radius: 4px 4px 0 0;
+}
+
+/*------------------------------------*/
+
+.fileSaved{
+  padding: 8px;
+}
+
+/*Side menu*/
+  nav.sidebar, .main{
+    -webkit-transition: margin 200ms ease-out;
+      -moz-transition: margin 200ms ease-out;
+      -o-transition: margin 200ms ease-out;
+      transition: margin 200ms ease-out;
+  }
+
+  .main{
+    padding: 10px 10px 0 10px;
+  }
+
+ @media (min-width: 765px) {
+
+    .main{
+      position: absolute;
+      width: calc(100% - 40px);
+      margin-left: 40px;
+      float: right;
+    }
+
+    nav.sidebar:hover + .main{
+      margin-left: 200px;
+    }
+
+    nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+      margin-left: 0px;
+    }
+
+    nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+      text-align: center;
+      width: 100%;
+      margin-left: 0px;
+    }
+    
+    nav.sidebar a{
+      padding-right: 13px;
+    }
+
+    nav.sidebar .navbar-nav > li:first-child{
+      border-top: 1px #e5e5e5 solid;
+    }
+
+    nav.sidebar .navbar-nav > li{
+      border-bottom: 1px #e5e5e5 solid;
+    }
+
+    nav.sidebar .navbar-nav .open .dropdown-menu {
+      position: static;
+      float: none;
+      width: auto;
+      margin-top: 0;
+      background-color: transparent;
+      border: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+      padding: 0 0px 0 0px;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+      color: #777;
+    }
+
+    nav.sidebar{
+      width: 100%;
+      height: 100%;
+      /*margin-left: -160px;*/
+      float: left;
+      margin-bottom: 0px;
+    }
+
+    nav.sidebar li {
+      width: 100%;
+    }
+
+    nav.sidebar:hover{
+      margin-left: 0px;
+    }
+
+    .forAnimate{
+      opacity: 0;
+    }
+  }
+
+  @media (min-width: 1330px) {
+
+    .main{
+      width: calc(100% - 200px);
+      margin-left: 200px;
+    }
+
+    nav.sidebar{
+      width: 100%;
+      margin-left: 0px;
+      float: left;
+    }
+
+    nav.sidebar .forAnimate{
+      opacity: 1;
+    }
+  }
+
+  nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
+    color: #CCC;
+    background-color: transparent;
+  }
+
+  nav:hover .forAnimate{
+    opacity: 1;
+  }
+  section{
+    padding-left: 15px;
+  }
+/*---------*/
+
+.endBorder{
+  border-right-width: 2px !important;
+  border-right-color: #ccc !important;
+}
+
+.upBorder{
+  border-top-width: 2px !important;
+  border-top-color: #ccc !important;
+}

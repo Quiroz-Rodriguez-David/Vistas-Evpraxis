@@ -1,0 +1,68 @@
+li.questions{
+	padding: 5px 0;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #aaa;
+}
+
+li.questions > p {
+	font-weight: bold;
+}
+
+li.questions > p > span{
+	font-weight: normal;
+}
+
+li.questions label p {
+	margin: 0;
+}
+
+#info ul{
+	list-style: none;
+}
+
+#info li.examen{
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+#info{
+	margin-bottom: 5px;
+}
+
+.completarQuestion{
+	font-weight: bold;
+}
+
+.pts{
+	font-weight: normal;
+}
+
+.alert{
+	padding: 3px !important;
+	font-weight: normal;
+}
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+
+.questionScore{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.alumnoName{
+	padding: 5px;
+	font-size: 1em;
+	font-weight: bold;	
+}
+
+.totalScore{
+	padding: 5px;
+	font-size: 2.5em;
+	font-weight: bold;
+}

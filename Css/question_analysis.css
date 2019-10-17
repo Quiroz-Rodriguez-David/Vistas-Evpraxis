@@ -1,0 +1,23 @@
+th.question:hover {
+	background-color:#ddd;
+}
+
+
+
+th.question{
+	cursor: pointer;
+}
+
+ol.answers {
+    counter-reset: list;
+}
+ol.answers > li {
+    list-style: none;
+    position: relative;
+}
+ol.answers > li:before {
+    counter-increment: list;
+    content: counter(list, lower-alpha) ") ";
+    position: absolute;
+    left: -1.4em;
+}
